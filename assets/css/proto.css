@@ -358,3 +358,6 @@
 /* スマホのブラウザが文字を勝手に大きくして、はみ出すのを防ぐ */
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .inline-cta .btn, .hero-bg__cta .btn { max-width: 100%; }
+
+/* スマホで開いているときは「スマホ表示」を出さない */
+@media (max-width: 760px) { .proto-bar__phone { display: none; } }

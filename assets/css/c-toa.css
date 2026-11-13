@@ -244,3 +244,6 @@ h1, h2, h3, p, li, dd, dt { word-break: auto-phrase; }
 /* 波の区切り */
 .wave { display: block; width: 100%; margin: 0; }
 .mv .wave { margin-top: 30px; }
+
+/* スマホで開いているときは「スマホ表示」を出さない */
+@media (max-width: 760px) { .proto-bar__phone { display: none; } }

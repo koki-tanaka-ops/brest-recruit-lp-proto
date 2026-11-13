@@ -7,6 +7,10 @@
   "use strict";
 
   document.addEventListener("DOMContentLoaded", function () {
+    if (window.self !== window.top) {
+      var bar = document.querySelector(".proto-bar");
+      if (bar) bar.style.display = "none";
+    }
     initLazyMovie();
     initForm();
   });

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ブレスト様 採用LP 試作｜スマホ表示</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Noto Sans JP",sans-serif;background:#2a1f1a;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:18px 12px 28px}
+  .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center;font-size:13px}
+  .bar a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 14px}
+  .bar a.is-current{background:#ff7a1a;border-color:#ff7a1a;font-weight:700}
+  .bar .pc{border-style:dashed}
+  .note{font-size:12px;opacity:.7;margin-top:8px}
+  .phone{margin-top:14px;width:410px;height:min(864px,calc(100vh - 110px));border:10px solid #111;border-radius:40px;overflow:hidden;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .phone iframe{width:390px;height:100%;border:0;display:block}
+  @media (max-width:760px){.phone{border:0;border-radius:0;width:100%;height:calc(100vh - 90px)}.phone iframe{width:100%}.note{display:none}}
+</style>
+</head>
+<body>
+  <div class="bar">
+    <a href="?p=a" data-k="a">A案</a><a href="?p=b" data-k="b">B案</a><a href="?p=c" data-k="c">C案</a>
+    <a class="pc" id="pc" href="a.html">PCの表示に戻る</a><a class="pc" href="index.html">3案を並べて見る</a>
+  </div>
+  <p class="note">iPhoneと同じ幅（390px）で表示しています。中はスクロール・タップで操作できます</p>
+  <div class="phone"><iframe id="f" title="スマホ表示"></iframe></div>
+  <script>
+    var k = (new URLSearchParams(location.search).get("p") || "a").replace(/[^abc]/g, "") || "a";
+    document.getElementById("f").src = k + ".html";
+    document.getElementById("pc").href = k + ".html";
+    document.querySelectorAll("[data-k]").forEach(function (a) { if (a.dataset.k === k) a.classList.add("is-current"); });
+  </script>
+</body>
+</html>
