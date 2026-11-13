@@ -4,548 +4,312 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>【試作C】未経験から正社員の塾講師へ｜学習塾ブレスト</title>
+  <title>【試作C】横浜で、未経験から正社員の塾講師へ｜学習塾ブレスト</title>
   <link rel="icon" href="assets/images/brand/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/proto.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+  <link rel="stylesheet" href="assets/css/c-toa.css">
 </head>
-<body id="top" class="proto">
+<body id="top">
   <div class="proto-bar"><span class="proto-bar__label">試作</span><a href="a.html">A案</a><a href="b.html">B案</a><a href="c.html" class="is-current">C案</a><a href="index.html">3案を並べて見る</a></div>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a href="https://brest.co.jp/" class="site-header__logo" aria-label="学習塾ブレスト 公式サイトへ（別タブで開く）" target="_blank" rel="noopener">
-        <img src="assets/images/brand/logo.png" alt="BREST" width="160" height="48">
-      </a>
-      <nav class="site-nav" id="siteNav" aria-label="メインナビ">
-        <ul class="site-nav__list">
-          <li><a href="#casual">カジュアル面談</a></li>
-          <li><a href="#numbers">数字で見る</a></li>
-          <li><a href="#support">研修・サポート</a></li>
-          <li><a href="#more">もっと知る</a></li>
-          <li><a href="#entry" class="site-nav__cta">面談申込</a></li>
-        </ul>
-      </nav>
-      <button class="site-header__hamburger" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="メニューを開く" data-hamburger>
-        <span></span><span></span><span></span>
-      </button>
+
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="header__logo" href="#top"><img src="assets/images/brand/logo.png" alt="BREST" width="160" height="48"></a>
+      <nav class="header__nav"><a href="#about">ブレストとは</a><a href="#work">仕事内容</a><a href="#benefits">福利厚生</a><a href="#req">募集要項</a></nav>
+      <a class="btn header__btn" href="#entry"><svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6"/></svg>面談申込</a>
     </div>
   </header>
-  <main>
-    <section class="hero hero--bg hero--light">
-      <div class="hero-bg__overlay" aria-hidden="true"></div>
-      <div class="hero-bg__inner">
-        <div class="hero-bg__copy">
-          <p class="hero-bg__base">
-            <span class="hero-bg__base-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 3 21 9v11a1 1 0 0 1-1 1h-5v-7H10v7H5a1 1 0 0 1-1-1V9z"/></svg>
-            </span>
-            <span class="hero-bg__base-text"><strong>新卒・第二新卒・中途</strong> 絶賛募集中</span>
-          </p>
-          <h1 class="hero-bg__catch"><span class="hero-bg__catch-line1">未経験から</span><br><span class="hero-bg__catch-line2"><span class="hero-bg__catch-accent">正社員の塾講師へ</span>。</span></h1>
-          <ul class="hero-bg__points">
-            <li>
-              <span class="hero-bg__points-label">月給</span>
-              <span class="hero-bg__points-wreath">
-                <img class="wreath wreath-left" src="assets/images/decoration/wreath.svg" alt="" width="24" height="80">
-                <span class="hero-bg__points-text">
-                  <span class="hero-bg__points-num">31.5</span><span class="hero-bg__points-unit">万円〜</span>
-                </span>
-                <img class="wreath wreath-right" src="assets/images/decoration/wreath.svg" alt="" width="24" height="80">
-              </span>
-              <span class="hero-bg__points-sub">＋賞与年3回</span>
-            </li>
-            <li>
-              <span class="hero-bg__points-label">残業</span>
-              <span class="hero-bg__points-wreath">
-                <img class="wreath wreath-left" src="assets/images/decoration/wreath.svg" alt="" width="24" height="80">
-                <span class="hero-bg__points-text">
-                  <span class="hero-bg__points-num">20</span><span class="hero-bg__points-unit">時間以内</span>
-                </span>
-                <img class="wreath wreath-right" src="assets/images/decoration/wreath.svg" alt="" width="24" height="80">
-              </span>
-              <span class="hero-bg__points-sub">月平均</span>
-            </li>
-            <li>
-              <span class="hero-bg__points-label">日曜休み</span>
-              <span class="hero-bg__points-wreath">
-                <img class="wreath wreath-left" src="assets/images/decoration/wreath.svg" alt="" width="24" height="80">
-                <span class="hero-bg__points-text">
-                  <span class="hero-bg__points-num">110</span><span class="hero-bg__points-unit">日以上</span>
-                </span>
-                <img class="wreath wreath-right" src="assets/images/decoration/wreath.svg" alt="" width="24" height="80">
-              </span>
-              <span class="hero-bg__points-sub">年間休日</span>
-            </li>
-          </ul>
-          
-          <div class="hero-bg__cta">
-<p class="hero-bg__cta-eyebrow"><span>30秒で簡単！</span></p>
-            <a href="#entry" class="btn btn--cta btn--large">
-              <span class="btn__stack">
-                <span class="btn__lead">カジュアル面談に申し込む</span>
-                <span class="btn__sub">（オンライン対応）</span>
-              </span>
-              <span class="btn__arrow" aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-        <div class="hero-bg__gallery">
-          <figure class="hero-bg__shot">
-            <img src="assets/images/photos/hero-g1-raise-hand.webp" alt="ホワイトボードの前で生徒に語りかける講師" loading="eager" decoding="async" fetchpriority="high" width="1100" height="647">
-          </figure>
-          <figure class="hero-bg__shot">
-            <img src="assets/images/photos/hero-g3-classroom.webp" alt="生徒でにぎわう教室の様子" loading="eager" decoding="async" width="1100" height="647">
-          </figure>
-        </div>
-      </div>
-    </section>
-    <section class="section section--beige" id="casual">
-      <div class="section__bg-text" aria-hidden="true">CASUAL</div>
-      <div class="section__inner">
-        <h2 class="section__label"><span class="dot"></span>まずはカジュアル面談から</h2>
-        <p class="section__lead">「いきなり応募はちょっと不安…」<br class="sp-only">という人のための、気軽な面談です。</p>
-        <div class="points__list">
-          <div class="point">
-            <span class="point__icon">01</span>
-            <div>
-              <h3 class="point__title">選考ではないので、気楽に</h3>
-              <p class="point__desc">志望動機や自己PRの準備は要りません。お互いを知るための時間です。</p>
-            </div>
-          </div>
-          <div class="point">
-            <span class="point__icon">02</span>
-            <div>
-              <h3 class="point__title">気になることを、遠慮なく</h3>
-              <p class="point__desc">「残業は実際どのくらい？」「未経験でもついていける？」「配属はどこになる？」など、求人票だけでは分からないことを聞いてください。</p>
-            </div>
-          </div>
-          <div class="point">
-            <span class="point__icon">03</span>
-            <div>
-              <h3 class="point__title">オンラインで、自宅から</h3>
-              <p class="point__desc">ご自宅から参加できます。話してみて「ちょっと違うな」と思ったら、それで大丈夫です。</p>
-            </div>
-          </div>
-        </div>
-        <div class="mini-flow">
-          <div class="mini-flow__item"><p class="mini-flow__num">STEP 1</p><p class="mini-flow__title">フォーム送信<br>（30秒）</p></div>
-          <div class="mini-flow__item"><p class="mini-flow__num">STEP 2</p><p class="mini-flow__title">担当から<br>日程の連絡</p></div>
-          <div class="mini-flow__item"><p class="mini-flow__num">STEP 3</p><p class="mini-flow__title">オンラインで<br>面談</p></div>
-        </div>
-        <div class="inline-cta">
-<p class="hero-bg__cta-eyebrow"><span>30秒で簡単！</span></p>
-            <a href="#entry" class="btn btn--cta btn--large">
-              <span class="btn__stack">
-                <span class="btn__lead">カジュアル面談に申し込む</span>
-                <span class="btn__sub">（オンライン対応）</span>
-              </span>
-              <span class="btn__arrow" aria-hidden="true">→</span>
-            </a>
-        </div>
 
+  <main>
+    <section class="mv">
+      <div class="wrap mv__grid">
+        <div class="mv__text">
+          <h1 class="mv__catch">
+            <span class="mv__line1">未経験から</span>
+            <span class="mv__line2">正社員の</span>
+            <span class="mv__line3">塾講師へ。<span class="mv__badge"><svg viewBox="0 0 20 26" aria-hidden="true"><path d="M10 2 2 6.5V24l8-4.5z" fill="#f5b400"/><path d="M10 2l8 4.5V24l-8-4.5z" fill="#2f8f46"/></svg><span>教員免許・<br>学歴は不問!!</span></span></span>
+          </h1>
+        </div>
+        <div class="mv__photo"><img src="assets/images/photos/hero-g1-raise-hand.webp" alt="ホワイトボードの前で生徒に語りかける講師" fetchpriority="high"></div>
+      </div>
+      <div class="wrap">
+        <div class="mv__chips"><span class="mv__chip">20〜30代が中心</span><span class="mv__chip">創業25年以上</span><span class="mv__chip">残業 月20時間以内</span></div>
+        <div class="cta"><a href="#entry" class="btn"><svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg><span>30秒で簡単！カジュアル面談を申し込む</span></a></div>
+      </div>
+      <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" style="background:transparent;height:64px"><g><path d="M0 40 C 180 0, 360 80, 560 40 S 900 0, 1200 30 L1200 120 L0 120 Z" fill="var(--c-main)"/><path d="M0 62 C 220 22, 400 100, 620 58 S 960 30, 1200 56" fill="none" stroke="#ffc48c" stroke-width="3"/></g></svg>
+    </section>
+
+    <section class="sec about" id="about">
+      <div class="wrap">
+        <h2 class="sec-title">ブレストって、<br class="sp">どんな塾？</h2>
+        <p class="sec-lead">横浜で14スクールを展開する、<br class="sp">中学生専門の学習塾です。</p>
+        <div class="about__list">
+        <article class="about-card">
+          <svg class="about-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5C10 5 7 4.5 3.5 5v13.5C7 18 10 18.5 12 20c2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5zM12 6.5V20"/></svg>
+          <div><h3 class="about-card__title">中学生に向き合う、<br>専門の学習塾です。</h3><p class="about-card__text">中学生専門の学習塾です。1クラス約12名の少人数で、一人ひとりの理解度を見ながら授業を進めます。生徒の「わかった！」に立ち会える仕事です。</p></div>
+        </article>
+        <article class="about-card">
+          <svg class="about-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V9.5l7-5 7 5V21M9.5 21v-5h5v5M10 11h4"/></svg>
+          <div><h3 class="about-card__title">横浜で、<br>25年以上の歴史。</h3><p class="about-card__text">創業25年以上。横浜で14スクールを展開しています。港南区・南区・都筑区・港北区・鶴見区に教室がある、地域密着の塾です。</p></div>
+        </article>
+        <article class="about-card">
+          <svg class="about-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <div><h3 class="about-card__title">転居を伴う転勤は、<br>ありません。</h3><p class="about-card__text">教室は横浜市内だけ。配属はお住まいや希望を考えて決めるので、腰を据えて長く働けます。</p></div>
+        </article>
+        <article class="about-card">
+          <svg class="about-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.4"/><path d="M2.8 20a6.2 6.2 0 0 1 12.4 0"/><path d="M15.5 4.8a3.4 3.4 0 0 1 0 6.4M17.6 14.2A6.2 6.2 0 0 1 21.2 20"/></svg>
+          <div><h3 class="about-card__title">未経験でも、<br>積極採用中。</h3><p class="about-card__text">いまの社員の62%が未経験からのスタートです。教員免許・学歴は問いません。講師全員を正社員として採用しています。</p></div>
+        </article>
+        </div>
       </div>
     </section>
-    <section class="section" id="numbers">
-      <div class="section__bg-text" aria-hidden="true">NUMBERS</div>
-      <div class="section__inner">
-        <h2 class="section__label"><span class="dot"></span>数字で見るブレスト</h2>
-        <div class="stats__grid">
-          <div class="stat">
-            <p class="stat__label">月給</p>
-            <p class="stat__value"><span class="stat__num">31.5</span><span class="stat__unit">万円〜</span></p>
-            <span class="stat__sub">＋賞与年3回</span>
-          </div>
-          <div class="stat">
-            <p class="stat__label">残業</p>
-            <p class="stat__value"><span class="stat__num">20</span><span class="stat__unit">時間以内</span></p>
-            <span class="stat__sub">月平均</span>
-          </div>
-          <div class="stat">
-            <p class="stat__label">年間休日</p>
-            <p class="stat__value"><span class="stat__num">110</span><span class="stat__unit">日以上</span></p>
-            <span class="stat__sub">日曜休み</span>
-          </div>
-          <div class="stat">
-            <p class="stat__label">未経験スタート</p>
-            <p class="stat__value"><span class="stat__num">62</span><span class="stat__unit">%</span></p>
-            <span class="stat__sub">いまの社員のうち</span>
-          </div>
-          <div class="stat">
-            <p class="stat__label">研修</p>
-            <p class="stat__value"><span class="stat__num">300</span><span class="stat__unit">時間</span></p>
-            <span class="stat__sub">年間</span>
-          </div>
-          <div class="stat">
-            <p class="stat__label">1クラスの人数</p>
-            <p class="stat__value"><span class="stat__num">約12</span><span class="stat__unit">名</span></p>
-            <span class="stat__sub">少人数制</span>
+    <div class="gallery"><img src="assets/images/photos/hero-g3-classroom.webp" alt="生徒でにぎわう教室" loading="lazy"><img src="assets/images/photos/culture-02.webp" alt="授業の様子" loading="lazy"></div>
+
+    <section class="sec movie" id="movie">
+      <div class="wrap">
+        <h2 class="sec-title">30秒でわかる、<br>ブレストの働き方。</h2>
+        <p class="sec-lead">教室の雰囲気や、<br class="sp">授業の様子を短い動画で見られます。</p>
+        <div class="movie__grid">
+        <div class="movie__item">
+          <button class="movie-lazy__item" type="button" data-ig="https://www.instagram.com/p/DZPmYrovS02/" aria-label="動画1を再生">
+            <img src="assets/images/photos/culture-03.webp" alt="" loading="lazy"><span class="movie-lazy__play"></span>
+          </button>
+          <p class="movie__cap">ブレストの動画 1<br>（タップで再生）</p>
+        </div>
+        <div class="movie__item">
+          <button class="movie-lazy__item" type="button" data-ig="https://www.instagram.com/p/DZe8_MGPeMc/" aria-label="動画2を再生">
+            <img src="assets/images/photos/culture-02.webp" alt="" loading="lazy"><span class="movie-lazy__play"></span>
+          </button>
+          <p class="movie__cap">ブレストの動画 2<br>（タップで再生）</p>
+        </div>
+        <div class="movie__item">
+          <button class="movie-lazy__item" type="button" data-ig="https://www.instagram.com/p/DZkHwSNvzz7/" aria-label="動画3を再生">
+            <img src="assets/images/photos/culture-01.webp" alt="" loading="lazy"><span class="movie-lazy__play"></span>
+          </button>
+          <p class="movie__cap">ブレストの動画 3<br>（タップで再生）</p>
+        </div>
+        </div>
+        <div class="cta"><a href="#entry" class="btn"><svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg><span>30秒で簡単！カジュアル面談を申し込む</span></a></div>
+      </div>
+    </section>
+
+    <section class="sec numbers" id="numbers">
+      <div class="wrap">
+        <h2 class="sec-title">数字で見る、<br class="sp">ブレスト。</h2>
+        <p class="sec-lead">働きやすさと、<br class="sp">未経験から始めやすいことが分かる数字です。</p>
+        <div class="numbers__grid">
+        <div class="num">
+          <svg class="num__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V9.5l7-5 7 5V21M9.5 21v-5h5v5M10 11h4"/></svg>
+          <p class="num__label">創業</p>
+          <p class="num__value"><span class="num__big">25</span><span class="num__unit">年以上</span></p>
+        </div>
+        <div class="num">
+          <svg class="num__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <p class="num__label">横浜のスクール</p>
+          <p class="num__value"><span class="num__big">14</span><span class="num__unit">校</span></p>
+        </div>
+        <div class="num">
+          <svg class="num__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V5M5 5h11l-2.2 3.5L16 12H5"/></svg>
+          <p class="num__label">未経験スタート</p>
+          <p class="num__value"><span class="num__big">62</span><span class="num__unit">%</span></p>
+        </div>
+        <div class="num">
+          <svg class="num__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+          <p class="num__label">年間休日</p>
+          <p class="num__value"><span class="num__big">110</span><span class="num__unit">日以上</span></p>
+        </div>
+        <div class="num">
+          <svg class="num__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.2V12l3.2 2"/></svg>
+          <p class="num__label">残業（月平均）</p>
+          <p class="num__value"><span class="num__big">20</span><span class="num__unit">時間以内</span></p>
+        </div>
+        <div class="num">
+          <svg class="num__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h18M5 9v11M19 9v11M8 9V5h8v4"/></svg>
+          <p class="num__label">1クラスの人数</p>
+          <p class="num__value"><span class="num__pre">約</span><span class="num__big">12</span><span class="num__unit">名</span></p>
+        </div>
+        </div>
+      </div>
+    </section>
+    <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" style="background:var(--c-main);height:64px"><g><path d="M0 40 C 180 0, 360 80, 560 40 S 900 0, 1200 30 L1200 120 L0 120 Z" fill="#fff"/><path d="M0 62 C 220 22, 400 100, 620 58 S 960 30, 1200 56" fill="none" stroke="#ffc48c" stroke-width="3"/></g></svg>
+
+    <section class="sec work" id="work">
+      <div class="wrap">
+        <h2 class="sec-title">塾講師の仕事内容</h2>
+        <p class="sec-lead">13:45に出勤して、22:45に退勤。<br>授業の準備から振り返りまでが1日の流れです。</p>
+        <div class="work__grid">
+        <article class="work-card">
+          <div class="work-card__img"><img src="assets/images/photos/day-02.webp" alt="" loading="lazy"></div>
+          <h3 class="work-card__title"><span class="work-card__time">14:00</span>01 連絡・準備</h3>
+          <p class="work-card__text">その日の授業内容や生徒の情報を確認します。研修とマニュアルがあるので、未経験でも安心です。</p>
+        </article>
+        <article class="work-card">
+          <div class="work-card__img"><img src="assets/images/photos/day-03.webp" alt="" loading="lazy"></div>
+          <h3 class="work-card__title"><span class="work-card__time">15:00</span>02 授業準備</h3>
+          <p class="work-card__text">教材を確認し、進め方を整理します。生徒一人ひとりに合わせた指導を考える時間です。</p>
+        </article>
+        <article class="work-card">
+          <div class="work-card__img"><img src="assets/images/photos/day-04.webp" alt="" loading="lazy"></div>
+          <h3 class="work-card__title"><span class="work-card__time">16:00〜</span>03 授業</h3>
+          <p class="work-card__text">1クラス約12名の授業です。「わかった！」という瞬間に立ち会える、やりがいのある時間です。</p>
+        </article>
+        <article class="work-card">
+          <div class="work-card__img"><img src="assets/images/photos/day-05.webp" alt="" loading="lazy"></div>
+          <h3 class="work-card__title"><span class="work-card__time">22:20</span>04 振り返り</h3>
+          <p class="work-card__text">授業内容や生徒の様子をチームで共有し、次の指導につなげます。22:45に退勤です。</p>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec support" id="support">
+      <div class="wrap">
+        <h2 class="sec-title">未経験からでも、<br class="sp">安心のサポート。</h2>
+        <div class="support__list">
+        <article class="support-row">
+          <div class="support-row__img"><img src="assets/images/photos/hero-g2-teacher-woman.webp" alt="" loading="lazy"></div>
+          <div><h3 class="support-row__title">年間300時間の研修で、<br>先生になるまでサポート。</h3><p class="support-row__text">授業の進め方や生徒対応を、基礎から学べます。入社後6か月は研修期間です。</p></div>
+        </article>
+        <article class="support-row">
+          <div class="support-row__img"><img src="assets/images/photos/culture-03.webp" alt="" loading="lazy"></div>
+          <div><h3 class="support-row__title">先輩講師が、<br>そばでフォロー。</h3><p class="support-row__text">その日の準備の仕方から授業の組み立てまで、OJTとマニュアルで教えます。</p></div>
+        </article>
+        <article class="support-row">
+          <div class="support-row__img"><img src="assets/images/photos/hero-g4-interview.webp" alt="" loading="lazy"></div>
+          <div><h3 class="support-row__title">いきなり一人で、<br>授業はしません。</h3><p class="support-row__text">準備が整った段階で授業を担当します。自信を持って教壇に立てるまで支えます。</p></div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" style="background:#fff;height:64px"><g><path d="M0 40 C 180 0, 360 80, 560 40 S 900 0, 1200 30 L1200 120 L0 120 Z" fill="var(--c-sub)"/><path d="M0 62 C 220 22, 400 100, 620 58 S 960 30, 1200 56" fill="none" stroke="#fff" stroke-width="3"/></g></svg>
+      <div class="wrap benefits__inner">
+        <div class="benefits__card">
+          <h2 class="sec-title">充実した、福利厚生。</h2>
+          <div class="benefits__photos"><img src="assets/images/photos/culture-01.webp" alt="" loading="lazy"><img src="assets/images/photos/culture-04.webp" alt="" loading="lazy"><img src="assets/images/photos/culture-03.webp" alt="" loading="lazy"></div>
+          <p class="benefits__cap">スクールの様子</p>
+          <div class="benefits__list">
+          <div class="benefit"><p class="benefit__title">休日</p><p class="benefit__text">年間休日110日以上。<br>日曜日は完全休みです。</p></div>
+          <div class="benefit"><p class="benefit__title">長期休暇</p><p class="benefit__text">GW7日・夏期3日・<br>年末年始4日・秋休7日ほか。</p></div>
+          <div class="benefit"><p class="benefit__title">賞与</p><p class="benefit__text">年3回（6月・9月・翌2月）。<br>入社8か月以降が対象です。</p></div>
+          <div class="benefit"><p class="benefit__title">各種手当</p><p class="benefit__text">住宅支援手当15,000円〜・<br>通勤手当3万円まで実費。</p></div>
+          <div class="benefit"><p class="benefit__title">退職金・企業年金</p><p class="benefit__text">退職金制度と、<br>はぐくみ企業年金があります。</p></div>
+          <div class="benefit"><p class="benefit__title">リゾート提携ほか</p><p class="benefit__text">エクシブ・ベイコート倶楽部など。<br>健康診断・ワクチン接種も。</p></div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section--beige" id="support">
-      <div class="section__bg-text" aria-hidden="true">SUPPORT</div>
-      <div class="section__inner">
-        <h2 class="section__label"><span class="dot"></span>未経験でも、安心のサポート</h2>
-        <p class="section__lead">教員免許・学歴は問いません。<br class="sp-only">経験は入社してから身につければ大丈夫です。</p>
-        <div class="points__list">
-          <div class="point">
-            <span class="point__icon">01</span>
-            <div>
-              <h3 class="point__title">年間300時間の研修で、先生になるまでサポート</h3>
-              <p class="point__desc">授業の進め方や生徒対応を、基礎から学べます。入社後6か月は研修期間です。</p>
-            </div>
-          </div>
-          <div class="point">
-            <span class="point__icon">02</span>
-            <div>
-              <h3 class="point__title">先輩講師のOJTとマニュアル</h3>
-              <p class="point__desc">その日の準備の仕方から授業の組み立てまで、先輩講師がそばでフォローします。</p>
-            </div>
-          </div>
-          <div class="point">
-            <span class="point__icon">03</span>
-            <div>
-              <h3 class="point__title">いきなり一人で授業はしません</h3>
-              <p class="point__desc">準備が整った段階で授業を担当します。自信を持って教壇に立てるまで、しっかり支えます。</p>
-            </div>
-          </div>
+
+    <section class="sec fit" id="fit">
+      <div class="wrap">
+        <h2 class="sec-title">こんな人に、<br>向いています。</h2>
+        <p class="sec-lead">経験や特別なスキルは要りません。<br>ひとつでも当てはまれば、きっと合います。</p>
+        <ul class="fit__list">
+        <li class="fit__item"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>子どもの成長に関わる仕事がしたい人</li>
+        <li class="fit__item"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>塾講師のアルバイト経験を、仕事にしたい人</li>
+        <li class="fit__item"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>横浜で腰を据えて、長く働きたい人</li>
+        <li class="fit__item"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>午後から始まる働き方が合う人</li>
+        <li class="fit__item"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>頑張りをきちんと評価してほしい人</li>
+        </ul>
+        <p class="proto-note">試作メモ：この5つは仮の文言です。先方に確かめてから決めます</p>
+      </div>
+    </section>
+
+    <section class="sec req" id="req">
+      <div class="wrap">
+        <h2 class="sec-title">募集要項</h2>
+        <dl class="req__table">
+        <div class="req__row"><dt>雇用形態</dt><dd>正社員</dd></div>
+        <div class="req__row"><dt>募集職種</dt><dd>塾講師（中学生向け）</dd></div>
+        <div class="req__row"><dt>給与</dt><dd>月額31.5万円〜<small>基本給248,080円・超過勤務手当51,920円・住宅支援手当15,000円〜。入社後6か月の研修期間は月額300,714円〜</small></dd></div>
+        <div class="req__row"><dt>賞与</dt><dd>年3回（6月・9月・翌2月）<small>入社8か月以降が対象</small></dd></div>
+        <div class="req__row"><dt>勤務時間</dt><dd>13:45〜22:45 などのシフト制（休憩1時間）<small>週40時間・年間の変形労働時間制</small></dd></div>
+        <div class="req__row"><dt>勤務地</dt><dd>本社 横浜市港南区日野南／各スクール 港南区・南区・都筑区・港北区・鶴見区<small>新スクールのオープンにあわせて、ほかの勤務地になる場合があります</small></dd></div>
+        <div class="req__row"><dt>休日・休暇</dt><dd>年間110日以上（日曜休み）<small>GW7日・夏期3日・年末年始4日・秋休7日・講習休暇ほか</small></dd></div>
+        <div class="req__row"><dt>手当</dt><dd>住宅支援手当15,000円〜・通勤手当3万円まで実費支給</dd></div>
+        <div class="req__row"><dt>福利厚生</dt><dd>退職金制度・はぐくみ企業年金・高級リゾート提携・医療関連サービス・健康診断・インフルエンザワクチン接種・死亡弔慰金</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sec faq" id="faq">
+      <div class="wrap">
+        <h2 class="sec-title">よくある質問</h2>
+        <div class="faq__list">
+        <div class="faq-item"><p class="faq-item__q"><span class="faq-item__mark">?</span>塾講師は未経験ですが、大丈夫ですか？</p><p class="faq-item__a">大丈夫です。いまの社員の62%が未経験からのスタートです。年間300時間の研修と先輩のフォローで、基礎から身につけられます。</p></div>
+        <div class="faq-item"><p class="faq-item__q"><span class="faq-item__mark">?</span>教員免許は必要ですか？</p><p class="faq-item__a">必要ありません。学歴も問いません。教員免許の有無よりも、「子どもの成長に関わりたい」という想いを大切にしています。</p></div>
+        <div class="faq-item"><p class="faq-item__q"><span class="faq-item__mark">?</span>年齢が気になります。</p><p class="faq-item__a">20代から30代のメンバーが中心です。年齢の近い先輩が多く、迷ったときにも相談しやすい雰囲気があります。</p></div>
+        <div class="faq-item"><p class="faq-item__q"><span class="faq-item__mark">?</span>勤務地はどこですか？</p><p class="faq-item__a">横浜市内の各スクールです（港南区・南区・都筑区・港北区・鶴見区）。お住まいや希望を考えて決め、転居を伴う転勤はありません。</p></div>
+        <div class="faq-item"><p class="faq-item__q"><span class="faq-item__mark">?</span>残業はどのくらいですか？</p><p class="faq-item__a">月平均20時間以内です。日曜は完全休みで、長期休暇もあります。</p></div>
+        <div class="faq-item"><p class="faq-item__q"><span class="faq-item__mark">?</span>いきなり面接ですか？</p><p class="faq-item__a">いいえ。まずは「カジュアル面談」から。選考ではないので、気軽に話を聞きに来てください。</p></div>
         </div>
       </div>
     </section>
-    <section class="section" id="voice">
-      <div class="section__bg-text" aria-hidden="true">VOICE</div>
-      <div class="section__inner">
-        <h2 class="section__label"><span class="dot"></span>社員の声</h2>
-        <div class="voice__stack voice__stack--single">
-          <article class="voice-card">
-            <div class="voice-card__head">
-              <div class="voice-card__avatar"><img src="assets/images/photos/voice-lecturer-a.webp" alt="" loading="lazy"></div>
-              <div class="voice-card__meta">
-                <span class="voice-card__tag">入社1年目</span>
-                <span class="voice-card__name">Aさん</span>
-              </div>
-            </div>
-            <p class="voice-card__lead">未経験スタートでも、ちゃんと安心して立てる場所がある。</p>
-            <p class="voice-card__body">大学時代に塾講師のアルバイトをしていたことがきっかけで応募しました。<br>研修期間に教材や指導フローを丁寧に教えてもらい、初めての授業も先輩のフォローがあって安心して臨めました。<br>生徒からの「わかった！」の声を初めて聞いたときの嬉しさは今でも忘れられません。</p>
-          </article>
+
+    <div class="strip"><img src="assets/images/photos/culture-04.webp" alt="ブレストのスクール" loading="lazy"></div>
+
+    <section class="sec casual" id="casual">
+      <div class="wrap">
+        <h2 class="sec-title">カジュアル面談って？</h2>
+        <p class="casual__lead">「いきなり応募はちょっと不安…」という人のための、気軽な顔合わせです。面接のように合否を決める場ではないので、リラックスして来てください。オンラインなので、ご自宅から参加できます。「自分に合いそうかな？」を確かめにくる感覚でOKです。</p>
+        <div class="casual__list">
+        <article class="casual-card">
+          <svg class="casual-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+          <h3 class="casual-card__title">選考じゃないので、気楽に。</h3>
+          <p class="casual-card__text">志望動機や自己PRを準備してくる必要はありません。うまく話そうとしなくて大丈夫です。お互いを知るための時間だと思ってください。</p>
+        </article>
+        <article class="casual-card">
+          <svg class="casual-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 5h15a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-5 4v-4h-.5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg>
+          <h3 class="casual-card__title">働き方のことも、遠慮なく。</h3>
+          <p class="casual-card__text">「残業って実際どのくらい？」「未経験でもついていける？」「配属はどこになる？」——求人票だけでは分からないことを、遠慮なく聞いてください。</p>
+        </article>
+        <article class="casual-card">
+          <svg class="casual-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="10.5" rx="1.4"/><path d="M2 19h20"/></svg>
+          <h3 class="casual-card__title">オンラインで、自宅から。</h3>
+          <p class="casual-card__text">ご自宅から参加できます。話してみて「ちょっと違うな」と思ったら、それで大丈夫です。</p>
+        </article>
         </div>
+        <div class="cta"><a href="#entry" class="btn"><svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg><span>30秒で簡単！カジュアル面談を申し込む</span></a></div>
       </div>
     </section>
-    <section class="section section--cta entry" id="entry">
-      <div class="section__bg-text section__bg-text--dark" aria-hidden="true">ENTRY</div>
-      <div class="section__inner">
-        <p class="entry__pre">あなたの一歩を、ここから。</p>
-        <h2 class="entry__title">30秒で簡単。<br>まずはカジュアル面談から。</h2>
-        <p class="entry__lead">お名前と連絡先だけで、お申し込みが完了します。<br class="pc-only">日程は、あとから担当がご連絡します。</p>
+
+    <section class="entry" id="entry">
+      <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" style="background:var(--c-pale);height:64px"><g><path d="M0 40 C 180 0, 360 80, 560 40 S 900 0, 1200 30 L1200 120 L0 120 Z" fill="var(--c-main)"/><path d="M0 62 C 220 22, 400 100, 620 58 S 960 30, 1200 56" fill="none" stroke="#ffc48c" stroke-width="3"/></g></svg>
+      <div class="wrap">
+        <h2 class="sec-title">カジュアル面談を<br>申し込む？</h2>
+        <p class="sec-lead">下のフォームを送るだけ。<br>あとは、こちらから日程の相談でご連絡します。</p>
         <div class="entry-form" data-entry-form>
           <form novalidate>
-            <span class="entry-form__badge">入力は3つだけ</span>
-            <div class="entry-form__row">
-              <label class="entry-form__label" for="f-name">お名前<span class="entry-form__req">必須</span></label>
-              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="例）横浜 太郎" required>
-            </div>
-            <div class="entry-form__row">
-              <label class="entry-form__label" for="f-tel">電話番号<span class="entry-form__req">必須</span></label>
-              <input id="f-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="例）090-1234-5678" required>
-            </div>
-            <div class="entry-form__row">
-              <label class="entry-form__label" for="f-mail">メールアドレス<span class="entry-form__req">必須</span></label>
-              <input id="f-mail" name="email" type="email" inputmode="email" autocomplete="email" placeholder="例）brest@example.com" required>
-            </div>
-            <div class="entry-form__row">
-              <label class="entry-form__label" for="f-from">ブレストをどこで知りましたか<span class="entry-form__opt">任意</span></label>
-              <select id="f-from" name="from">
-                <option value="">選んでください</option>
-                <option>Instagram</option>
-                <option>Instagramの広告</option>
-                <option>検索（Googleなど）</option>
-                <option>知人の紹介</option>
-                <option>その他</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn--cta btn--large entry-form__submit">
-              <span class="btn__stack"><span class="btn__lead">カジュアル面談に申し込む</span></span>
-            </button>
-            <p class="entry-form__privacy">送信すると<a href="https://brest.co.jp/privacy-policy/privacy-policy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に<br class="sp-only">同意したものとします</p>
+            <div class="entry-form__row"><label class="entry-form__label" for="c-name">お名前<span class="entry-form__req">必須</span></label><input id="c-name" name="name" type="text" autocomplete="name" placeholder="横浜 太郎" required></div>
+            <div class="entry-form__row"><label class="entry-form__label" for="c-tel">電話番号<span class="entry-form__req">必須</span></label><input id="c-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="090-1234-5678" required></div>
+            <div class="entry-form__row"><label class="entry-form__label" for="c-mail">メールアドレス<span class="entry-form__req">必須</span></label><input id="c-mail" name="email" type="email" inputmode="email" autocomplete="email" placeholder="example@mail.com" required></div>
+            <div class="entry-form__row"><label class="entry-form__label" for="c-from">ブレストをどこで知りましたか<span class="entry-form__opt">（任意）</span></label>
+              <select id="c-from" name="from"><option value="">選んでください</option><option>Instagram</option><option>Instagramの広告</option><option>検索（Googleなど）</option><option>知人の紹介</option><option>その他</option></select></div>
+            <div class="entry-form__row"><label class="entry-form__label" for="c-q">ご質問<span class="entry-form__opt">（任意）</span></label><textarea id="c-q" name="question" placeholder="聞いてみたいこと、気になることがあればどうぞ"></textarea></div>
+            <button type="submit" class="btn btn--block">送信する</button>
+            <p class="entry-form__privacy">送信すると<a href="https://brest.co.jp/privacy-policy/privacy-policy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に<br class="sp">同意したものとします</p>
           </form>
           <div class="entry-form__done" role="status">
             <p class="entry-form__done-title">お申し込みありがとうございます</p>
-            <p>担当から、面談の日程についてご連絡します。<br>もうしばらくお待ちください。</p>
+            <p>担当から、面談の日程についてご連絡します。</p>
             <p class="proto-note">試作メモ：これは試作なので、送信はされません</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section--beige" id="more">
-      <div class="section__bg-text" aria-hidden="true">MORE</div>
-      <div class="section__inner">
-        <h2 class="section__label"><span class="dot"></span>もっと知りたい人へ</h2>
-        <p class="section__lead">タップすると開きます。</p>
-        <div class="fold">
-          <details class="fold__item"><summary>動画で見る（30秒）</summary><div class="fold__body">
-        <div class="movie-lazy">
-          <button class="movie-lazy__item" type="button" data-ig="https://www.instagram.com/p/DZPmYrovS02/">
-            <img src="assets/images/photos/culture-03.webp" alt="" loading="lazy">
-            <span><span class="movie-lazy__play" aria-hidden="true"></span><span class="movie-lazy__cap">動画 1<br>タップで再生</span></span>
-          </button>
-          <button class="movie-lazy__item" type="button" data-ig="https://www.instagram.com/p/DZe8_MGPeMc/">
-            <img src="assets/images/photos/culture-02.webp" alt="" loading="lazy">
-            <span><span class="movie-lazy__play" aria-hidden="true"></span><span class="movie-lazy__cap">動画 2<br>タップで再生</span></span>
-          </button>
-          <button class="movie-lazy__item" type="button" data-ig="https://www.instagram.com/p/DZkHwSNvzz7/">
-            <img src="assets/images/photos/culture-01.webp" alt="" loading="lazy">
-            <span><span class="movie-lazy__play" aria-hidden="true"></span><span class="movie-lazy__cap">動画 3<br>タップで再生</span></span>
-          </button>
-        </div>
-          </div></details>
-          <details class="fold__item"><summary>塾講師の1日</summary><div class="fold__body">
-        <p class="a-day__range">
-          <span class="a-day__range-time">13:45</span>
-          <span class="a-day__range-chev" aria-hidden="true">»»</span>
-          <span class="a-day__range-time">22:45</span>
-          <span class="a-day__range-muted">の一日</span>
-        </p>
-        <div class="a-day__bento">
-          <article class="a-day__card">
-            <span class="a-day__time-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
-              13:45
-            </span>
-            <h3 class="a-day__title">出勤</h3>
-            <div class="a-day__media"><img src="assets/images/photos/day-01.webp" alt="" loading="lazy"></div>
-            <p class="a-day__desc">ゆっくり午後から出社。通勤ラッシュを避けて出勤。</p>
-          </article>
-          <article class="a-day__card">
-            <span class="a-day__time-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
-              14:00
-            </span>
-            <h3 class="a-day__title">連絡事項の確認・準備</h3>
-            <div class="a-day__media"><img src="assets/images/photos/day-02.webp" alt="" loading="lazy"></div>
-            <p class="a-day__desc">その日の授業内容や生徒の情報をチェック。未経験でも、研修やマニュアルがあるので安心して準備ができる。</p>
-          </article>
-          <article class="a-day__card">
-            <span class="a-day__time-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
-              15:00
-            </span>
-            <h3 class="a-day__title">授業準備</h3>
-            <div class="a-day__media"><img src="assets/images/photos/day-03.webp" alt="" loading="lazy"></div>
-            <p class="a-day__desc">教材の確認や進め方を整理。生徒一人ひとりに合わせた指導を考える時間。</p>
-          </article>
-          <article class="a-day__card">
-            <span class="a-day__time-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
-              16:00〜
-            </span>
-            <h3 class="a-day__title">授業</h3>
-            <div class="a-day__media"><img src="assets/images/photos/day-04.webp" alt="" loading="lazy"></div>
-            <p class="a-day__desc">いよいよ授業スタート。「わかった！」という瞬間に立ち会える、やりがいのある時間。</p>
-          </article>
-          <article class="a-day__card">
-            <span class="a-day__time-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
-              22:20
-            </span>
-            <h3 class="a-day__title">打ち合わせ・振り返り</h3>
-            <div class="a-day__media"><img src="assets/images/photos/day-05.webp" alt="" loading="lazy"></div>
-            <p class="a-day__desc">授業内容や生徒の様子を共有。次の指導につなげる大切な時間。</p>
-          </article>
-          <article class="a-day__card">
-            <span class="a-day__time-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
-              22:45
-            </span>
-            <h3 class="a-day__title">退勤</h3>
-            <div class="a-day__media"><img src="assets/images/photos/day-06.webp" alt="" loading="lazy"></div>
-            <p class="a-day__desc">1日お疲れさまでした。仕事終わりにジムや趣味の時間を楽しむ社員も多く、メリハリをつけて働けます。</p>
-          </article>
-        </div>
-          </div></details>
-          <details class="fold__item"><summary>働きやすさ・福利厚生</summary><div class="fold__body">
-        <div class="culture__grid">
-          <article class="culture-card" style="background-image:url('assets/images/photos/culture-01.webp');">
-            <span class="culture-card__num">01</span>
-            <div class="culture-card__body">
-              <h3 class="culture-card__title">日曜日完全休み</h3>
-              <p class="culture-card__desc">プライベートの時間もしっかり確保</p>
-            </div>
-          </article>
-          <article class="culture-card" style="background-image:url('assets/images/photos/culture-02.webp');">
-            <span class="culture-card__num">02</span>
-            <div class="culture-card__body">
-              <h3 class="culture-card__title">長期休みあり</h3>
-              <p class="culture-card__desc">GW・夏期・年末年始・秋休と講習休暇</p>
-            </div>
-          </article>
-          <article class="culture-card" style="background-image:url('assets/images/photos/culture-03.webp');">
-            <span class="culture-card__num">03</span>
-            <div class="culture-card__body">
-              <h3 class="culture-card__title">授業に集中できる<br class="pc-only">独自制度</h3>
-              <p class="culture-card__desc">バックグラウンド業務を一部委託しているため、生徒と向き合える時間を最大化させます</p>
-            </div>
-          </article>
-          <article class="culture-card" style="background-image:url('assets/images/photos/culture-04.webp');">
-            <span class="culture-card__num">04</span>
-            <div class="culture-card__body">
-              <h3 class="culture-card__title">転居を伴う転勤なし</h3>
-              <p class="culture-card__desc">地域密着・横浜市に14教室</p>
-            </div>
-          </article>
-        </div>
-        <div class="welfare__grid">
-          <div class="welfare"><p class="welfare__title">賞与 年3回</p><p class="welfare__desc">6月・9月・翌2月（入社8か月以降）</p></div>
-          <div class="welfare"><p class="welfare__title">住宅支援手当</p><p class="welfare__desc">15,000円〜</p></div>
-          <div class="welfare"><p class="welfare__title">通勤手当</p><p class="welfare__desc">3万円まで実費支給</p></div>
-          <div class="welfare"><p class="welfare__title">退職金制度</p><p class="welfare__desc">はぐくみ企業年金もあり</p></div>
-          <div class="welfare"><p class="welfare__title">リゾート提携</p><p class="welfare__desc">エクシブ・ベイコート倶楽部など</p></div>
-          <div class="welfare"><p class="welfare__title">健康診断</p><p class="welfare__desc">インフルエンザワクチン接種も</p></div>
-        </div>
-          </div></details>
-          <details class="fold__item"><summary>入社後のキャリア</summary><div class="fold__body">
-        <ol class="step__timeline">
-          <li class="step-item">
-            <div class="step-item__badge">入社〜6ヶ月</div>
-            <h3 class="step-item__title">研修期間</h3>
-            <p class="step-item__desc">未経験でも研修・マニュアルで安心してスタート。先輩講師がOJTでフォロー。</p>
-          </li>
-          <li class="step-item">
-            <div class="step-item__badge">1年目</div>
-            <h3 class="step-item__title">授業担当・生徒との関係構築</h3>
-            <p class="step-item__desc">一人ひとりに向き合う指導を身につける。日々の振り返りで授業の質を磨いていく。</p>
-          </li>
-          <li class="step-item">
-            <div class="step-item__badge">3年目</div>
-            <h3 class="step-item__title">昇進のチャンス</h3>
-            <p class="step-item__desc">スクール営業担当・教室運営に関わるポジションへ。結果を出せば、しっかり評価される環境。</p>
-          </li>
-          <li class="step-item">
-            <div class="step-item__badge">数年後</div>
-            <h3 class="step-item__title">教室長</h3>
-            <p class="step-item__desc">スクール責任者・エリア責任者としてチームを率いる。組織の中核として成長を任される。</p>
-          </li>
-        </ol>
-          </div></details>
-          <details class="fold__item"><summary>募集要項</summary><div class="fold__body">
-        <div class="req-card">
-          <dl class="req-table">
-            <div class="req-row"><dt>雇用形態</dt><dd>正社員</dd></div>
-            <div class="req-row"><dt>給与</dt><dd>月額31.5万円〜<br><span class="small">（基本給248,080円　超過勤務手当51,920円　住宅支援手当15,000円〜）<br>※通勤手当3万円まで実費支給</span><br><span class="req-note">入社後6ヶ月間は研修期間のため月額300,714円〜</span></dd></div>
-            <div class="req-row"><dt>賞与</dt><dd>年3回（6月・9月・翌2月）<span class="small">※支給対象：入社8か月以降</span><br><span class="small">業績、勤務成績、勤務態度、勤務姿勢、勤続年数、貢献度に応じて支給</span></dd></div>
-            <div class="req-row"><dt>勤務時間</dt><dd>週40時間　<span class="small">※年間の変形労働時間制採用</span><br>13:45〜22:45　などシフト制（休憩1時間）</dd></div>
-            <div class="req-row"><dt>勤務地</dt><dd>本社　横浜市港南区日野南<br>各スクール　港南区・南区・都筑区・港北区・鶴見区<br><span class="small">・各スクールへシフト制にて出勤<br>・新スクールオープンに際して、上記勤務地以外に出勤の可能性もあり</span></dd></div>
-            <div class="req-row"><dt>休日・休暇</dt><dd>年間110日以上（日曜休み）<br><span class="small">（GW休暇7日間　夏期休暇3日間　年末年始休暇4日間　秋休暇7日間　講習休暇他）</span></dd></div>
-            <div class="req-row"><dt>福利厚生</dt><dd>エクシブ・ベイコート倶楽部等の高級リゾート提携　医療関連サービス<br>退職金制度　死亡弔慰金　健康診断・インフルエンザワクチン接種<br>はぐくみ企業年金（厚生労働大臣の認可）</dd></div>
-          </dl>
-        </div>
-          </div></details>
-          <details class="fold__item"><summary>よくある質問</summary><div class="fold__body">
-        <ul class="faq__list">
-          <li class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false" data-faq-toggle>
-              <span class="faq-item__q-mark" aria-hidden="true">Q</span>
-              <span class="faq-item__q-text">講師の年齢層はどれくらいですか？</span>
-              <span class="faq-item__q-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-item__a" data-faq-panel>
-              <p>20代から30代のメンバーが中心です。年齢の近い先輩が多く、授業の進め方や生徒対応で迷ったときにも相談しやすい雰囲気があります。</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false" data-faq-toggle>
-              <span class="faq-item__q-mark" aria-hidden="true">Q</span>
-              <span class="faq-item__q-text">教員免許は必要ですか？</span>
-              <span class="faq-item__q-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-item__a" data-faq-panel>
-              <p>必要ありません。BRESTでは、教員免許の有無よりも「子どもの成長に関わりたい」という想いを大切にしています。異業種から転職して活躍している社員も多数在籍しています。</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false" data-faq-toggle>
-              <span class="faq-item__q-mark" aria-hidden="true">Q</span>
-              <span class="faq-item__q-text">1クラスの人数はどれくらいですか？</span>
-              <span class="faq-item__q-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-item__a" data-faq-panel>
-              <p>1クラスあたり約12名の少人数制です。一人ひとりの理解度を把握しながら授業を進められるため、生徒との距離が近く、成長を間近で感じられる環境です。</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false" data-faq-toggle>
-              <span class="faq-item__q-mark" aria-hidden="true">Q</span>
-              <span class="faq-item__q-text">配属先はどのように決まりますか？</span>
-              <span class="faq-item__q-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-item__a" data-faq-panel>
-              <p>お住まいや希望を考慮したうえで、横浜エリアの各スクールへ配属となります。地域密着型のため、転居を伴う転勤はありません。</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false" data-faq-toggle>
-              <span class="faq-item__q-mark" aria-hidden="true">Q</span>
-              <span class="faq-item__q-text">残業時間はどのくらいですか？</span>
-              <span class="faq-item__q-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-item__a" data-faq-panel>
-              <p>月平均20時間以内です。効率的な働き方を大切にしており、授業後の業務もチームで協力しながら進めています。日曜は完全休みで、長期休暇もあるため、メリハリをつけて働くことができます。</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false" data-faq-toggle>
-              <span class="faq-item__q-mark" aria-hidden="true">Q</span>
-              <span class="faq-item__q-text">転勤はありますか？</span>
-              <span class="faq-item__q-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-item__a" data-faq-panel>
-              <p>ありません。BRESTは横浜エリアで14スクールを展開している地域密着型の学習塾です。転居を伴う異動はなく、腰を据えて長く働くことができます。</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false" data-faq-toggle>
-              <span class="faq-item__q-mark" aria-hidden="true">Q</span>
-              <span class="faq-item__q-text">授業はいつから担当しますか？</span>
-              <span class="faq-item__q-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-item__a" data-faq-panel>
-              <p>研修や先輩社員のサポートを受けながら、準備が整った段階で授業を担当していただきます。いきなり一人で授業を任せることはありません。自信を持って授業に臨めるよう、しっかりサポートします。</p>
-            </div>
-          </li>
-        </ul>
-          </div></details>
-        </div>
-      </div>
-    </section>
   </main>
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <div class="site-footer__links">
-        <a href="https://brest.co.jp/" target="_blank" rel="noopener">会社概要</a>
-        <span aria-hidden="true">｜</span>
-        <a href="https://brest.co.jp/privacy-policy/privacy-policy.html" target="_blank" rel="noopener">プライバシーポリシー</a>
-      </div>
-      <p class="site-footer__copy"><small>Copyright (C) BREST HOLDINGS All Rights Reserved.</small></p>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__name">株式会社ブレストホールディングス</p>
+      <p>本社 横浜市港南区日野南<br>横浜市内で14スクールを展開する中学生専門の学習塾</p>
+      <p class="footer__links"><a href="https://brest.co.jp/" target="_blank" rel="noopener">会社概要</a><a href="https://brest.co.jp/privacy-policy/privacy-policy.html" target="_blank" rel="noopener">プライバシーポリシー</a></p>
+      <small>Copyright (C) BREST HOLDINGS All Rights Reserved.</small>
     </div>
   </footer>
-
-  <div class="sticky-cta" data-sticky-cta>
-    <div class="sticky-cta__inner">
-      <a href="#entry" class="btn btn--cta sticky-cta__primary">
-        <span class="btn__stack">
-          <span class="btn__lead">カジュアル面談に申し込む</span>
-          <span class="btn__sub">（オンライン対応）</span>
-        </span>
-        <span class="btn__arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
-  </div>
-
-  <script src="assets/js/main.js" defer></script>
   <script src="assets/js/proto.js" defer></script>
 </body>
 </html>
