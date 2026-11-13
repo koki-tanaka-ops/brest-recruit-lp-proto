@@ -354,3 +354,7 @@
   .hero--light .hero-bg__points-label { white-space: nowrap; font-size: 17px; }
   .hero--light .hero-bg__points-wreath { margin-top: 2px; }
 }
+
+/* スマホのブラウザが文字を勝手に大きくして、はみ出すのを防ぐ */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+.inline-cta .btn, .hero-bg__cta .btn { max-width: 100%; }
