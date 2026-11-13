@@ -267,3 +267,90 @@
 .inline-cta .hero-bg__cta-eyebrow { color: var(--color-accent-dark); }
 .inline-cta .hero-bg__cta-eyebrow span::before,
 .inline-cta .hero-bg__cta-eyebrow span::after { background: var(--color-accent-dark); border-color: var(--color-accent-dark); }
+
+/* ============================================
+   11/13 晃輝さんの直し
+   ============================================ */
+
+/* 日本語を言葉の切れ目で折り返す（対応しているブラウザだけ効く） */
+.proto h1, .proto h2, .proto h3, .proto p, .proto li, .proto dd, .proto summary { word-break: auto-phrase; }
+
+/* 見出し：「未経験から」「正社員の塾講師へ。」の2行に固定 */
+.hero--light .hero-bg__catch { white-space: nowrap; }
+.hero--light .hero-bg__catch-line1,
+.hero--light .hero-bg__catch-line2 { display: inline-block; }
+@media (max-width: 640px) {
+  .hero--light .hero-bg__catch {
+    font-size: min(9.6vw, 44px);
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+  }
+  .hero--light .hero-bg__catch-line2 { font-size: 1em; }
+}
+
+/* 「62%」：% を数字の右下に小さく、下揃えで */
+.hero-bg__points-text.hero-bg__points-text--inline {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 1px;
+}
+.hero-bg__points-text--inline .hero-bg__points-unit { font-size: 0.5em; }
+@media (max-width: 640px) {
+  .hero-bg__points-text--inline .hero-bg__points-unit { font-size: 15px; }
+}
+
+/* 写真：斜めをやめて、角の丸い横長の写真を2枚並べる */
+.hero--light .hero-bg__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  width: 520px;
+  max-width: 100%;
+  margin: 0;
+}
+.hero--light .hero-bg__gallery > *,
+.hero--light .hero-bg__shot {
+  transform: none;
+  border-radius: 16px;
+  aspect-ratio: 3 / 2;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+.hero--light .hero-bg__shot img {
+  transform: none;
+  width: 100%;
+  margin-left: 0;
+  object-position: 50% 40%;
+}
+@media (max-width: 1100px) { .hero--light .hero-bg__gallery { width: 400px; } }
+@media (max-width: 900px) {
+  .hero--light .hero-bg__gallery { width: 100%; max-width: 560px; margin: 0 auto; gap: 10px; }
+}
+@media (max-width: 640px) {
+  .hero--light .hero-bg__gallery { gap: 8px; }
+  .hero--light .hero-bg__gallery > *,
+  .hero--light .hero-bg__shot { border-radius: 12px; }
+}
+/* PCは写真を縦に大きく見せる */
+@media (min-width: 901px) {
+  .hero--light .hero-bg__gallery { grid-template-columns: 1fr; width: 440px; gap: 16px; }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .hero--light .hero-bg__gallery { width: 340px; }
+}
+
+/* FVの下の1行 */
+.hero-bg__subline { line-height: 1.7; margin: 0 0 18px; }
+@media (max-width: 640px) { .hero-bg__subline { font-size: 12.5px; } }
+
+/* フォームの同意文 */
+.entry-form__privacy { line-height: 1.7; }
+
+/* PC：% の大きさと、ラベルが月桂冠に重ならないように */
+.hero-bg__points-text--inline .hero-bg__points-unit { font-size: 18px; }
+@media (max-width: 640px) {
+  .hero-bg__points-text--inline .hero-bg__points-unit { font-size: 15px; }
+}
+@media (min-width: 641px) {
+  .hero--light .hero-bg__points-label { white-space: nowrap; font-size: 17px; }
+  .hero--light .hero-bg__points-wreath { margin-top: 2px; }
+}
