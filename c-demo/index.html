@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ブレスト様 採用LP（C案）デモ｜PC・スマホでの見え方</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{font-family:"Noto Sans JP",sans-serif;background:#f3efe8;color:#1a1a1a;min-height:100vh;padding:24px 24px 40px}
+  .head{max-width:1500px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+  h1{font-size:22px;font-weight:900;line-height:1.4}
+  .lead{font-size:13px;color:#6b6b6b;margin-top:4px;line-height:1.8}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap}
+  .tabs button,.tabs a{font:inherit;font-size:13px;font-weight:700;color:#1a1a1a;background:#fff;border:1px solid rgba(0,0,0,.15);border-radius:999px;padding:7px 16px;cursor:pointer;text-decoration:none}
+  .tabs button.is-on{background:#ff7a1a;border-color:#ff7a1a;color:#fff}
+  .stage{max-width:1500px;margin:20px auto 0;display:flex;gap:32px;align-items:flex-start;justify-content:center}
+  .label{font-size:12px;font-weight:700;color:#6b6b6b;margin-bottom:8px;letter-spacing:.05em}
+  .pc{flex:1 1 auto;min-width:0;max-width:1100px}
+  .pc__frame{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.08)}
+  .pc__bar{height:34px;background:#ece8e1;display:flex;align-items:center;gap:6px;padding:0 12px}
+  .pc__bar i{width:11px;height:11px;border-radius:50%;background:#d6d0c6}
+  .pc__url{margin-left:12px;flex:1;max-width:420px;height:22px;border-radius:6px;background:#fff;font-size:11px;color:#8a8a8a;display:flex;align-items:center;padding:0 10px}
+  .pc__view{position:relative;overflow:hidden}
+  .pc__view iframe{position:absolute;top:0;left:0;width:1440px;border:0;transform-origin:0 0}
+  .sp{flex:0 0 auto}
+  .sp__frame{width:410px;border:10px solid #161616;border-radius:44px;overflow:hidden;background:#fff;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+  .sp__frame iframe{width:390px;border:0;display:block}
+  body[data-v="pc"] .sp,body[data-v="sp"] .pc{display:none}
+  body[data-v="pc"] .pc{max-width:1500px}
+  .mobile-note{display:none}
+  @media (max-width:900px){
+    body{padding:16px 0 0}
+    .head{padding:0 16px}
+    h1{font-size:18px}
+    .tabs,.pc,.label{display:none !important}
+    .stage{margin-top:12px}
+    .sp{width:100%;display:block !important}
+    .sp__frame{width:100%;border:0;border-radius:0;box-shadow:none}
+    .sp__frame iframe{width:100%}
+    .mobile-note{display:block;font-size:12px;color:#6b6b6b;margin-top:6px;line-height:1.7}
+  }
+</style>
+</head>
+<body data-v="both">
+  <div class="head">
+    <div>
+      <h1>ブレスト様 採用LP（C案）デモ</h1>
+      <p class="lead">PCとスマホでの見え方のイメージです。画面の中はスクロール・タップで操作できます。<br>応募フォームはデモのため、送信しても実際には届きません。</p>
+      <p class="mobile-note">スマホでの見え方を表示しています。PCでの見え方は、このページをPCで開くとご覧いただけます。</p>
+    </div>
+    <div class="tabs">
+      <button type="button" data-v="both">並べて見る</button>
+      <button type="button" data-v="pc">PC</button>
+      <button type="button" data-v="sp">スマホ</button>
+      <a href="lp/" target="_blank" rel="noopener">別タブで開く ↗</a>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="pc">
+      <p class="label">PC（幅1440px）</p>
+      <div class="pc__frame">
+        <div class="pc__bar"><i></i><i></i><i></i><span class="pc__url">brest.co.jp/recruit2026/</span></div>
+        <div class="pc__view" id="pcView"><iframe id="pcFrame" src="lp/" title="PCでの見え方"></iframe></div>
+      </div>
+    </div>
+    <div class="sp">
+      <p class="label">スマホ（iPhone と同じ幅 390px）</p>
+      <div class="sp__frame"><iframe id="spFrame" src="lp/" title="スマホでの見え方"></iframe></div>
+    </div>
+  </div>
+
+  <script>
+    var body = document.body;
+    var pcView = document.getElementById("pcView");
+    var pcFrame = document.getElementById("pcFrame");
+    var spFrame = document.getElementById("spFrame");
+
+    function fit() {
+      var mobile = window.innerWidth <= 900;
+      var h = Math.max(480, window.innerHeight - (mobile ? 110 : 160));
+      spFrame.style.height = (mobile ? window.innerHeight - 90 : Math.min(h, 844)) + "px";
+      var w = pcView.clientWidth;
+      if (!w) return;
+      var scale = w / 1440;
+      var viewH = Math.max(420, window.innerHeight - 194);
+      pcView.style.height = viewH + "px";
+      pcFrame.style.height = viewH / scale + "px";
+      pcFrame.style.transform = "scale(" + scale + ")";
+    }
+
+    function setView(v) {
+      body.setAttribute("data-v", v);
+      document.querySelectorAll(".tabs button").forEach(function (b) { b.classList.toggle("is-on", b.dataset.v === v); });
+      history.replaceState(null, "", v === "both" ? location.pathname : "?v=" + v);
+      fit();
+    }
+
+    document.querySelectorAll(".tabs button").forEach(function (b) {
+      b.addEventListener("click", function () { setView(b.dataset.v); });
+    });
+    window.addEventListener("resize", fit);
+    var first = new URLSearchParams(location.search).get("v");
+    setView(first === "pc" || first === "sp" ? first : "both");
+  </script>
+</body>
+</html>
