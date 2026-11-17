@@ -114,7 +114,7 @@ h1, h2, h3, p, li, dd, dt { word-break: auto-phrase; }
 .movie__cap { text-align: center; font-size: 13px; font-weight: 500; margin: 10px 0 0; line-height: 1.6; }
 @media (min-width: 768px) {
   .movie__grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .movie__item:last-child:nth-child(odd) { grid-column: auto; width: auto; }
+  .movie__item:last-child:nth-child(odd) { grid-column: auto; width: auto; margin: 0; }
 }
 
 /* 4. 数字で見る（濃い帯） */
