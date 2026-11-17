@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
-  <link rel="stylesheet" href="css/c-toa.css?v=20261113">
+  <link rel="stylesheet" href="css/c-toa.css?v=20261117">
   <!-- 構造化データ（Googleしごと検索向け JobPosting） -->
   <script type="application/ld+json">
   {
@@ -80,8 +80,9 @@
   <header class="header">
     <div class="wrap header__inner">
       <a class="header__logo" href="#top"><img src="images/brand/logo.png" alt="BREST" width="160" height="48"></a>
-      <nav class="header__nav"><a href="#about">ブレストとは</a><a href="#work">仕事内容</a><a href="#benefits">福利厚生</a><a href="#req">募集要項</a></nav>
+      <nav class="header__nav" id="gnav"><a href="#about">ブレストとは</a><a href="#work">仕事内容</a><a href="#benefits">福利厚生</a><a href="#req">募集要項</a></nav>
       <a class="btn header__btn" href="#entry"><svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6"/></svg>面談申込</a>
+    <button class="header__burger" type="button" id="burger" aria-label="メニューを開く" aria-expanded="false" aria-controls="gnav"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -375,6 +376,6 @@
       <small>Copyright (C) BREST HOLDINGS All Rights Reserved.</small>
     </div>
   </footer>
-  <script src="js/lp.js?v=20261113" defer></script>
+  <script src="js/lp.js?v=20261117" defer></script>
 </body>
 </html>

@@ -13,6 +13,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initLazyMovie();
+    initMenu();
     initCtaTracking();
     initForm();
   });
@@ -29,6 +30,21 @@
     s.async = true;
     s.onload = done;
     document.body.appendChild(s);
+  }
+
+  function initMenu() {
+    var header = document.querySelector(".header");
+    var burger = document.getElementById("burger");
+    if (!header || !burger) return;
+    function set(open) {
+      header.classList.toggle("is-open", open);
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "メニューを閉じる" : "メニューを開く");
+    }
+    burger.addEventListener("click", function () { set(!header.classList.contains("is-open")); });
+    document.querySelectorAll("#gnav a").forEach(function (a) {
+      a.addEventListener("click", function () { set(false); });
+    });
   }
 
   function initLazyMovie() {
